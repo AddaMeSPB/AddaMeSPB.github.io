@@ -3,8 +3,9 @@
 Last updated: August 2, 2023
 
 ## Introduction
-
-Thank you for choosing iIntrvwClock ("we", "our", or "us"). This Privacy Policy explains how we handle your information and the choices you have in connection with that information. We value your privacy and strive to protect your personal information.
+-> common email use for Apple Store Review Team
+addame_365_app_review@maildrop.cc
+link: [Apple App Review Email indox](https://maildrop.cc/inbox/?mailbox=addame_365_app_review)
 
 ## Information We Collect
 
