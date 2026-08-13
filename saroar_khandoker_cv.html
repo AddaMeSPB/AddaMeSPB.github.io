@@ -1,325 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>SAROAR KHANODKER CV</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      <!-- Include your custom CSS inside the style tags below -->
-      <style>
-         .container {
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Saroar Khandoker - Senior iOS Engineer</title>
+
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+   >
+
+   <style>
+      body {
          font-family: Arial, sans-serif;
-         }
-         .section {
+         color: #222;
+      }
+
+      .container {
+         font-family: Arial, sans-serif;
+      }
+
+      .section {
          margin-bottom: 2rem;
-         }
-         .section-title {
+      }
+
+      .section-title {
          color: navy;
          border-bottom: 1px dashed gray;
          padding-bottom: 0.5rem;
          margin-bottom: 1rem;
-         }
-         .section-list {
+      }
+
+      .section-list {
          padding-left: 1rem;
-         }
-         .experience-item {
+      }
+
+      .experience-item {
          margin-bottom: 2rem;
-         }
-         .experience-date {
+      }
+
+      .experience-date {
          color: gray;
          display: block;
          margin-bottom: 1rem;
-         }
-         .experience-company {
+      }
+
+      .experience-company {
          color: navy;
-         }
-         .project-list li {
-         margin-bottom: 1rem;
-         }
-         /* Additional styles for your profile layout */
-         .profile-container {
+      }
+
+      .experience-details li {
+         margin-bottom: 0.45rem;
+      }
+
+      .project-list li {
+         margin-bottom: 1.2rem;
+      }
+
+      .profile-container {
          display: flex;
          justify-content: center;
-         align-items: start;  /* align at the top */
+         align-items: start;
          flex-wrap: wrap;
-         }
-         .profile-image {
-         flex: 1;
-         max-width: 150px;
-         padding-right: 20px; /* Added right padding */
-         }
-         .profile-image img { /* Directly target the image within .profile-image */
-         width: 200px;
-         height: 200px;
-         }
-         .profile-description {
+      }
+
+      .profile-description {
          flex: 2;
          display: block;
+      }
+
+      .contact-list li {
+         vertical-align: top;
+      }
+
+      .contact-list a {
+         text-decoration: none;
+      }
+
+      .skill-category {
+         font-weight: bold;
+      }
+
+      .small-note {
+         color: #555;
+         font-size: 0.9rem;
+      }
+
+      @media print {
+         body {
+            padding: 0 !important;
+            font-size: 12px;
          }
-      </style>
-   </head>
-   <body class="p-5">
-      <div class="text-center mb-5">
-         <h2>Saroar Khandoker</h2>
-         <h5 style="color: navy">IOS / Swift / Web Developer</h5>
-      </div>
-      <div class="text-center">
-         <ul class="list-unstyled d-inline-block">
-            <li class="d-inline-block me-3">
-               <div>
-                  <span>📧</span>
-                  <br>
-                  <a href="mailto:saroar9@gmail.com">saroar9@gmail.com</a>
-               </div>
-            </li>
-            <li class="d-inline-block me-3">
-               <div>
-                  <span>📱</span>
-                  <br> +351911700782
-               </div>
-            </li>
-            <li class="d-inline-block me-3">
-               <div>
-                  <span>🗺️</span>
-                  <br> Lisbon, Portugal
-               </div>
-            </li>
-            <li class="d-inline-block me-3">
-               <div>
-                  <span>🔗</span>
-                  <br>
-                  <a href="https://www.linkedin.com/in/saroar-khandoker-3319b172/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-               </div>
-            </li>
-            <li class="d-inline-block me-3">
-               <div>
-                  <span>🔗</span>
-                  <br>
-                  <a href="https://github.com/saroar" target="_blank" rel="noopener noreferrer">GitHub</a>
-               </div>
-            </li>
-            <li class="d-inline-block">
-               <div>
-                  <span>🔗</span>
-                  <br>
-                  <a href="https://github.com/AddaMeSPB" target="_blank" rel="noopener noreferrer">Open Source</a>
-               </div>
-            </li>
-         </ul>
-      </div>
-      <div class="container">
-         <!-- Other sections of your content -->
-         <div class="section">
-            <h5 class="text-center section-title" style="color: navy;">Personal Profile</h5>
-            <div class="profile-container">
-               <div class="profile-description">
-                  <p>
-                     Master SwiftUI, Combine, and CoreData to build delightful, responsive iOS apps that elevate user experiences. My globally-minded approach, honed through international education and diverse team leadership, fosters seamless collaboration and cultural awareness. Adept at optimising workflow with modularized structures and TCA, I also automate deployments with Fastlane for streamlined delivery. Dedicated to both user satisfaction and personal well-being (yoga, meditation, and tantra), I bring focus and efficiency to every project.
-                  </p>
-               </div>
+
+         .section {
+            margin-bottom: 1.2rem;
+         }
+
+         .experience-item {
+            margin-bottom: 1.3rem;
+         }
+
+         a {
+            color: inherit;
+            text-decoration: none;
+         }
+      }
+   </style>
+</head>
+
+<body class="p-5">
+
+   <!-- Header -->
+   <div class="text-center mb-4">
+      <h2>Saroar Khandoker</h2>
+      <h5 style="color: navy;">
+         Senior iOS Engineer | SwiftUI | Swift
+      </h5>
+   </div>
+
+   <!-- Contact -->
+   <div class="text-center mb-4">
+      <ul class="list-unstyled d-inline-block contact-list">
+
+         <li class="d-inline-block me-3">
+            <div>
+               <span>📧</span>
+               <br>
+               <a href="mailto:saroar9@gmail.com">
+                  saroar9@gmail.com
+               </a>
             </div>
+         </li>
+
+         <li class="d-inline-block me-3">
+            <div>
+               <span>📱</span>
+               <br>
+               +351 911 700 782
+            </div>
+         </li>
+
+         <li class="d-inline-block me-3">
+            <div>
+               <span>🗺️</span>
+               <br>
+               Lisbon, Portugal
+            </div>
+         </li>
+
+         <li class="d-inline-block me-3">
+            <div>
+               <span>🔗</span>
+               <br>
+               <a
+                  href="https://www.linkedin.com/in/saroar-khandoker-3319b172/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  LinkedIn
+               </a>
+            </div>
+         </li>
+
+         <li class="d-inline-block me-3">
+            <div>
+               <span>🔗</span>
+               <br>
+               <a
+                  href="https://github.com/saroar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  GitHub
+               </a>
+            </div>
+         </li>
+
+         <li class="d-inline-block me-3">
+            <div>
+               <span>🔗</span>
+               <br>
+               <a
+                  href="https://byalif.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  Portfolio
+               </a>
+            </div>
+         </li>
+
+         <li class="d-inline-block">
+            <div>
+               <span>🔗</span>
+               <br>
+               <a
+                  href="https://github.com/AddaMeSPB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  Open Source
+               </a>
+            </div>
+         </li>
+
+      </ul>
+   </div>
+
+   <!-- Professional Profile -->
+   <div class="container">
+
+      <div class="section">
+
+         <h5
+            class="text-center section-title"
+            style="color: navy;"
+         >
+            Professional Profile
+         </h5>
+
+         <div class="profile-container">
+
+            <div class="profile-description">
+
+               <p>
+                  Senior iOS Engineer with 6+ years of experience building and
+                  maintaining production iOS applications using Swift, SwiftUI
+                  and UIKit. Strong experience taking ownership of features from
+                  architecture and implementation through testing, App Store
+                  delivery and production support. Comfortable working
+                  independently on existing and large-scale codebases,
+                  modernising legacy Objective-C and UIKit components, and
+                  collaborating with Product, UX, Design and QA teams.
+                  Experienced with SwiftUI, Combine, TCA, Core Data, SQLite,
+                  REST APIs, automated delivery and modern iOS development
+                  practices.
+               </p>
+
+            </div>
+
          </div>
-         <hr style="background-color: black; height: 2px;">
-         <!-- Other sections of your content -->
+
       </div>
-      <!-- border -->
-      <!-- <div class="container text-left" style="background-color:#E7E9EB; border: 1px solid black; border-radius:50px; padding: 40px;"> -->
-      <div class="container text-left">
-         <div class="row">
-            <div class="col-lg-8 col-md-7 order-2 order-md-1">
-               <div class="section">
-                  <h6 class="section-title" style="color: navy;">Experience</h6>
-                  <!-- Experience Item -->
-                  <div class="experience-item">
-                    <h6>iOS Developer - Social Networking & Founder | <a href="http://addame.com" target="_blank" rel="noopener noreferrer" class="experience-company">Addame</a> (Nov 2020 - Present)</h6>
-                    
-                    <ul class="experience-details">
-                        <li>⁠⁠Led the development of Addame, a dynamic social networking app, from scratch using SwiftUI, Combine, and Sqlite, resulting in a 60% increase in user engagement within the 2 years.</li>
-                        <li>Implemented a modularized project structure, greatly improving code maintainability and reducing bug incidence.</li>
-                        <li>Adopted TCA (The Composable Architecture) for the presentation layer, notably increasing development efficiency and enhancing team collaboration.</li>
-                        <li>Automated app deployment to AppStore via Fastlane, streamlining release cycles and ensuring consistent deployment schedules.</li>
-                    </ul>                    
-                </div>
-                
-                  <div class="experience-item">
-                     <h6>iOS Developer - Finance | <a href="https://www.sberbank.com/" target="_blank" rel="noopener noreferrer" class="experience-company">SberBank</a> (April 2021 - April 2022)
-                     </h6>
-                     <ul class="experience-details">
-                        <li>Development of new features responsive to business requirements, significantly enhancing user experience and engagement.</li>
-                        <li>Implemented fully functional analytics features, greatly improving the quality of data-driven decision-making.</li>
-                        <li>Mentored new developers, contributing to improved team productivity and knowledge sharing.</li>
-                        <li>Conducted code reviews, fixed critical bugs, wrote unit-tests, and was an active member in a Scrum team, leading to more efficient software release cycles.</li>
-                        <li>Assisted B2B clients, resulting in notably higher client satisfaction and stronger business relationships.</li>
-                        <li>Converted significant portions of the codebase from Objective-C to Swift, enhancing code maintainability and leveraging modern language features.</li>
-                        <li>Maintained and optimized a large, mature codebase, ensuring stability and scalability of applications, while introducing best practices for code quality and performance.</li>
-                    </ul>                    
-                  </div>
-                  <!-- Experience Item -->
-                  <div class="experience-item">
-                     <h6>iOS Developer - Lifestyle | <a href="http://www.rbc.ru/vacancies" target="_blank" rel="noopener noreferrer" class="experience-company">RosBusinessConsulting</a> (05/2022 — 07/2022)</h6>
-                     <ul class="experience-details">
-                        <li>Worked on bug fixes, added new features, and refactored outdated code.</li>
-                        <li>Automated processes of building and laying out mobile iOS.</li>
-                        <li>Updated regularly UI tests and localization in multiple languages.</li>
-                        <li>Uploading the app to AppStore.</li>
-                     </ul>
-                  </div>
-                  <!-- Experience Item -->
-                  <div class="experience-item">
-                    <h6>iOS Developer - Freelancer | <a href="http://upwork.com" target="_blank" rel="noopener noreferrer" class="experience-company">Upwork</a> (03/2020 - 11/2020)</h6>
-                    <ul class="experience-details">
-                        <li>Efficiently translated complex design plans into fully operational iOS app frameworks, ensuring seamless alignment with initial design concepts.</li>
-                        <li>Recreated and implemented the entire app from scratch, integrating all business logic to meet and exceed project requirements.</li>
-                        <li>Utilized advanced technologies including UIKit, MVC, WebSocket, CoreData, CoreLocation, MapKit, SwiftNIO, Vapor 4, JWT auth, Docker, and AWS S3, leading to robust app performance and scalable architecture.</li>
-                    </ul>
-                    
-                  </div>
-                  <!-- Experience Item -->
-                <div class="experience-item">
-                    <h6>iOS Developer - Social Networking | <a href="https://www.linkedin.com/company/verumlabs-software/" target="_blank" rel="noopener noreferrer" class="experience-company">Verum</a> (11/2019 - 03/2020)</h6>
-                    <ul class="experience-details">
-                        <li>Played a pivotal role in a SCRUM team, collaborating effectively with developers, testers, and product owners to deliver projects ahead of schedule.</li>
-                        <li>Designed and implemented app screens using Xcode and Storyboards, applying MVC and ARC patterns for enhanced app performance and maintainability.</li>
-                        <li>Successfully integrated CoreData for efficient data storage, significantly improving data retrieval speed.</li>
-                        <li>Seamlessly integrated third-party APIs like Google Maps and Facebook, enriching user experience and functionality.</li>
-                        <li>Expertise in technologies including UIKit, WebSocket, and various frameworks, leading to a robust, feature-rich app environment.</li>
-                        <li>Integrated a third-party voice calling feature using Objective-C, expanding the app’s functionality and improving user communication capabilities.</li>
-                    </ul>
-                </div>
 
-                  <!-- Experience Item -->
-                  <div class="experience-item">
-                     <h6>Ruby on Rails Developer | <a href="https://hh.ru/employer/2744107" target="_blank" rel="noopener noreferrer" class="experience-company">NullPay</a> (11/2017 - 05/2018)</h6>
-                     <ul class="experience-details">
-                         <li>Planned and developed robust cryptocurrency trading platform features using HTML, JavaScript, AJAX, and JSON, enhancing user interaction and transactional efficiency.</li>
-                         <li>Implemented secure and reliable payment gateway integrations for cryptocurrency transactions, ensuring a safe and user-friendly buying and selling experience.</li>
-                         <li>Ensured compliance with internal standards and technical requirements, particularly focusing on security protocols essential for cryptocurrency transactions.</li>
-                         <li>Developed real-time data visualization tools for cryptocurrency market analysis, aiding users in making informed trading decisions.</li>
-                         <li>Optimized platform performance for handling high-volume, real-time cryptocurrency transactions, significantly reducing latency and improving user satisfaction.</li>
-                         <li>Collaborated closely with the cybersecurity team to fortify the website against potential security threats, safeguarding user data and financial transactions.</li>
-                     </ul>
-                 </div>
-                 
-                  <!-- Experience Item -->
-                  <div class="experience-item">
-                     <h6>Ruby on Rails Developer  | <a href="https://garwin.ru/" target="_blank" rel="noopener noreferrer" class="experience-company">GarageTools</a> (11/2016 - 04/2017)</h6>
-                     <ul class="experience-details">
-                        <li>Performed regular website maintenance and content updates, enhancing the site's functionality and user experience, thus contributing to increased user engagement and satisfaction.</li>
-                        <li>Developed and wrote unit tests, ensuring higher code quality and reliability, leading to a reduction in application downtime and maintenance costs.</li>
-                        <li>Engaged in bug fixing, which enhanced the overall performance and stability of our applications, resulting in increased customer satisfaction and trust in our products.</li>
-                     </ul>
-                  </div>
+      <hr style="background-color: black; height: 2px;">
 
-                  <!-- Experience Item -->
-                  <div class="experience-item">
-                     <h6 class="experience-company">Ruby on Rails Developer | OZ Interactive (06/2016 - 10/2016)</h6>
-                     <ul class="experience-details">
-                        <li>Planned and developed websites using HTML, enhancing user interfaces and improving the overall aesthetic and functionality of the websites.</li>
-                        <li>Utilized AJAX and JSON for dynamic content updates, which improved the responsiveness and interactivity of web applications, leading to a better user experience.</li>
-                        <li>Implemented Ruby on Rails frameworks to streamline backend processes, resulting in more efficient and scalable web applications.</li>
-                        <li>Collaborated with design and development teams to ensure cohesive project execution, leading to more seamless and efficient project workflows.</li>
-                        <li>Conducted thorough testing and debugging of web applications, ensuring high reliability and minimizing downtime for users.</li>
-                        <li>Stayed abreast of the latest web development trends and technologies, applying this knowledge to create more innovative and cutting-edge web solutions.</li>
-                     </ul>
+   </div>
 
-                  </div>
-                  <!-- Experience Item -->
-                  <div class="experience-item">
-                     <h6>Ruby on Rails Developer | <a href="https://mkechinov.ru/" target="_blank" rel="noopener noreferrer" class="experience-company">Mikhail Kechinov Studio</a> (06/2016 - 10/2016)</h6>
-                     <ul class="experience-details">
-                         <li>Developed websites based on mockups using HTML, JavaScript, AJAX, and JSON coding, enhancing user interaction and visual appeal.</li>
-                         <li>Created and developed an e-commerce site, implementing robust shopping cart functionalities and secure payment gateways, resulting in a user-friendly shopping experience and increased online sales.</li>
-                         <li>Optimized website performance using Ruby on Rails, improving load times and efficiency, which contributed to higher user retention and satisfaction.</li>
-                         <li>Collaborated with UI/UX designers to refine website designs, ensuring both aesthetic appeal and functional usability, which enhanced overall customer engagement.</li>
-                         <li>Implemented responsive design principles to ensure optimal viewing across various devices and platforms, expanding the site's accessibility and reach.</li>
-                         <li>Conducted code reviews and maintained documentation, ensuring high-quality code standards and facilitating smooth project transitions and updates.</li>
-                     </ul>
-                 </div>
-                 
-               </div>
-            </div>
-            <div class="col-lg-4 col-md-5 order-1 order-md-2">
-               <!-- Skills -->
-               <div class="section">
-                  <h6 class="section-title">Skills</h6>
-                  <ul class="section-list">
-                    <li>REST APIs</li>
-                    <li>Agile Development</li>
-                    <li>Git, Bitbucket, Confluence</li>
-                    <li>Swift, Ruby, HTML, CSS, JS</li>
-                    <li>ParsingTechniques: XML,JSON</li>
-                    <li>FrameWorks: Cccoa Touch, SPM</li>
-                    <li>Object-Oriented Programming (OOP)</li>
-                    <li>Data Storage: CodeData, Sqlite, Plist, UserDefaults</li>
-                    <li>Tools: Agile methodology, Confluence,Jira, Jenkins, XCode, VSCode</li>
+   <!-- Main content -->
+   <div class="container text-left">
+
+      <div class="row">
+
+         <!-- Left column -->
+         <div class="col-lg-8 col-md-7 order-2 order-md-1">
+
+            <div class="section">
+
+               <h6 class="section-title">
+                  Professional Experience
+               </h6>
+
+               <!-- Addame -->
+               <div class="experience-item">
+
+                  <h6>
+                     iOS Developer - Social Networking & Founder |
+                     <a
+                        href="http://addame.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="experience-company"
+                     >
+                        Addame
+                     </a>
+                     (Nov 2020 - Present)
+                  </h6>
+
+                  <ul class="experience-details">
+
+                     <li>
+                        Designed and developed a consumer social networking
+                        application from scratch using SwiftUI, Combine and
+                        SQLite.
+                     </li>
+
+                     <li>
+                        Owned the complete iOS development lifecycle, including
+                        architecture, UI development, business logic,
+                        persistence, testing, releases and production
+                        maintenance.
+                     </li>
+
+                     <li>
+                        Introduced a modular project structure and The
+                        Composable Architecture (TCA) to improve separation of
+                        concerns and long-term maintainability.
+                     </li>
+
+                     <li>
+                        Built reusable SwiftUI components and responsive
+                        interfaces for evolving product requirements.
+                     </li>
+
+                     <li>
+                        Automated App Store deployment workflows using
+                        Fastlane and maintained regular production releases.
+                     </li>
+
                   </ul>
+
                </div>
-               <!-- Projects -->
-               <div class="section">
-                <h6 class="section-title">Other Projects</h6>
-                <ul class="section-list project-list">
-                    
-                    <div style="clear: both;"></div> <!-- Clearing float for consistent layout -->
-            
-                    <li style="float: left;">
-                        Creative Projects<br>
-                        <a href="https://github.com/saroar/Portfolio" target="_blank" rel="noopener noreferrer">Github Direct Link</a>
-                    </li>
 
-                    <div style="clear: both;"></div> <!-- Clearing float at the end -->
+               <!-- SberBank -->
+               <div class="experience-item">
 
-                    <li style="float: left;">eCardify <br> - Category: Business<br>
-                        <a href="https://apps.apple.com/pt/app/ecardify/id6452084315?l=en-GB" target="_blank" rel="noopener noreferrer">App Store link</a> & 
-                        <a href="https://ecardify.addame.com" target="_blank" rel="noopener noreferrer">Website</a>
-                    </li>
+                  <h6>
+                     iOS Developer - Finance |
+                     <a
+                        href="https://www.sberbank.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="experience-company"
+                     >
+                        SberBank
+                     </a>
+                     (April 2021 - April 2022)
+                  </h6>
 
-            
-                    <div style="clear: both;"></div> <!-- Clearing float after every two items for better layout -->
-            
-                    <li style="float: left;">iIntrvwbell(IOS Interview Q&A) <br> - Category: Education<br>
-                        <a href
-                        <a href="https://apps.apple.com/us/app/iintrvwbell/id6457363081" target="_blank" rel="noopener noreferrer">App Store link</a> & No Website
-                    </li>
+                  <ul class="experience-details">
 
-                    <div style="clear: both;"></div> <!-- Clearing float at the end -->
-                    
-                    <li style="float: left;">Walk Nearby, Neighbours & Friends <br> - Category: Social Networking<br>
-                        <a href="https://apps.apple.com/us/app/walk-nearby-neighbours-friends/id1538487173" target="_blank" rel="noopener noreferrer">App Store link</a> & 
-                        <a href="https://addame.com" target="_blank" rel="noopener noreferrer">Website</a>
-                    </li>
+                     <li>
+                        Developed and maintained features within a large-scale,
+                        mature production iOS application in the financial
+                        sector.
+                     </li>
 
-                    <li style="float: left;">New Word - Learn Word & Vocabulary <br> - Category: Education<br>
-                        <a href="https://apps.apple.com/us/app/new-word-learn-word-vocabulary/id1619504857" target="_blank" rel="noopener noreferrer">App Store link</a> & 
-                        <a href="https://words.addame.com/words" target="_blank" rel="noopener noreferrer">Website</a>
-                    </li>
-                    
-                    
-                    
-            
-                    
-                </ul>
-            </div>
-                        
-               <!-- Education -->
-               <div class="section" style="clear:both;">
-                  <h6 class="section-title">Education</h6>
-                  <ul>
-                     <li>Bachelor in Information Technology, St. Petersburg State University of Aerospace Instrumentation, Russia, 2015</li>
-                     <li>Remote Bootcamp in Ruby, USA</li>
+                     <li>
+                        Worked across feature implementation, code reviews,
+                        critical bug fixing, unit testing and production-quality
+                        improvements.
+                     </li>
+
+                     <li>
+                        Modernised legacy areas of the application by migrating
+                        Objective-C code to Swift while maintaining stability
+                        within an established codebase.
+                     </li>
+
+                     <li>
+                        Implemented analytics-related functionality supporting
+                        product and business decision-making.
+                     </li>
+
+                     <li>
+                        Worked closely with Product, QA, developers and business
+                        stakeholders in an Agile/Scrum environment.
+                     </li>
+
+                     <li>
+                        Mentored developers and contributed to code quality,
+                        technical discussions and engineering best practices.
+                     </li>
+
                   </ul>
+
                </div>
-               <!-- Languages -->
-               <div class="section" style="clear:both;">
-                  <h6 class="section-title">Languages</h6>
-                  <h6>English: Fluent</h6>
-                  <h6>Russian: Fluent</h6>
-                  <h6>Bangla: Native</h6>
-                  <h6>Hindi: Speak</h6>
+
+               <!-- RBC -->
+               <div class="experience-item">
+
+                  <h6>
+                     iOS Developer - Lifestyle |
+                     <a
+                        href="http://www.rbc.ru/vacancies"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="experience-company"
+                     >
+                        RosBusinessConsulting
+                     </a>
+                     (05/2022 - 07/2022)
+                  </h6>
+
+                  <ul class="experience-details">
+
+                     <li>
+                        Delivered new functionality and production bug fixes
+                        within an existing iOS codebase.
+                     </li>
+
+                     <li>
+                        Refactored outdated application components to improve
+                        maintainability and stability.
+                     </li>
+
+                     <li>
+                        Maintained UI tests and multilingual localisation across
+                        production application flows.
+                     </li>
+
+                     <li>
+                        Improved build and release processes and supported App
+                        Store deployment.
+                     </li>
+
+                  </ul>
+
                </div>
+
+               <!-- Upwork -->
+               <div class="experience-item">
+
+                  <h6>
+                     iOS Developer - Freelancer |
+                     <a
+                        href="https://upwork.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="experience-company"
+                     >
+                        Upwork
+                     </a>
+                     (03/2020 - 11/2020)
+                  </h6>
+
+                  <ul class="experience-details">
+
+                     <li>
+                        Worked independently with clients to turn product
+                        designs and requirements into production-ready iOS
+                        applications.
+                     </li>
+
+                     <li>
+                        Rebuilt applications from scratch, taking responsibility
+                        for UI implementation, architecture and business logic.
+                     </li>
+
+                     <li>
+                        Worked with UIKit, MVC, WebSocket, Core Data, Core
+                        Location, MapKit, SwiftNIO, Vapor 4, JWT authentication,
+                        Docker and AWS S3.
+                     </li>
+
+                  </ul>
+
+               </div>
+
+               <!-- Verum -->
+               <div class="experience-item">
+
+                  <h6>
+                     iOS Developer - Social Networking |
+                     <a
+                        href="https://www.linkedin.com/company/verumlabs-software/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="experience-company"
+                     >
+                        Verum
+                     </a>
+                     (11/2019 - 03/2020)
+                  </h6>
+
+                  <ul class="experience-details">
+
+                     <li>
+                        Collaborated with developers, QA engineers and product
+                        owners in a Scrum team to deliver consumer-facing iOS
+                        features.
+                     </li>
+
+                     <li>
+                        Designed and implemented UIKit screens using
+                        Storyboards and MVC.
+                     </li>
+
+                     <li>
+                        Implemented local persistence using Core Data and
+                        integrated external services including Google Maps and
+                        Facebook APIs.
+                     </li>
+
+                     <li>
+                        Worked with WebSocket-based functionality and real-time
+                        application features.
+                     </li>
+
+                     <li>
+                        Integrated an Objective-C voice-calling component into
+                        the existing iOS application.
+                     </li>
+
+                  </ul>
+
+               </div>
+
+               <!-- Earlier Engineering Experience -->
+               <div class="experience-item">
+
+                  <h6>
+                     Ruby on Rails / Web Developer |
+                     Various Companies
+                     (2016 - 2018)
+                  </h6>
+
+                  <ul class="experience-details">
+
+                     <li>
+                        Earlier software engineering experience across fintech,
+                        e-commerce and web applications.
+                     </li>
+
+                     <li>
+                        Worked with Ruby on Rails, JavaScript, AJAX, JSON,
+                        REST APIs, payment integrations and automated testing.
+                     </li>
+
+                     <li>
+                        Developed and maintained production systems while
+                        collaborating with product, design and engineering
+                        teams.
+                     </li>
+
+                  </ul>
+
+               </div>
+
             </div>
+
          </div>
+
+         <!-- Right column -->
+         <div class="col-lg-4 col-md-5 order-1 order-md-2">
+
+            <!-- Skills -->
+            <div class="section">
+
+               <h6 class="section-title">
+                  Core iOS Skills
+               </h6>
+
+               <ul class="section-list">
+
+                  <li>
+                     <span class="skill-category">Languages:</span>
+                     Swift, Objective-C
+                  </li>
+
+                  <li>
+                     <span class="skill-category">UI:</span>
+                     SwiftUI, UIKit, Storyboards
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Architecture:</span>
+                     TCA, MVVM, MVC, Modular Architecture
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Reactive:</span>
+                     Combine
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Networking:</span>
+                     REST APIs, URLSession, WebSocket, JSON
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Data:</span>
+                     Core Data, SQLite, GRDB, UserDefaults
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Apple Frameworks:</span>
+                     StoreKit, Core Location, MapKit
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Testing:</span>
+                     XCTest, Unit Tests, UI Tests
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Dependency Management:</span>
+                     Swift Package Manager
+                  </li>
+
+                  <li>
+                     <span class="skill-category">CI/CD:</span>
+                     Fastlane, Jenkins
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Tools:</span>
+                     Xcode, Git, Bitbucket, Jira, Confluence
+                  </li>
+
+                  <li>
+                     <span class="skill-category">Workflow:</span>
+                     Agile, Scrum, Code Reviews
+                  </li>
+
+               </ul>
+
+            </div>
+
+            <!-- Selected Products -->
+            <div class="section">
+
+               <h6 class="section-title">
+                  Selected iOS Products
+               </h6>
+
+               <ul class="section-list project-list">
+
+                  <li>
+                     <strong>
+                        SubTracker: Subscriptions
+                     </strong>
+                     <br>
+                     Consumer subscription and bill-tracking application built
+                     and maintained independently using modern iOS
+                     technologies.
+                  </li>
+
+                  <li>
+                     <strong>
+                        RePhoto: AI Real Estate Editor
+                     </strong>
+                     <br>
+                     Modern iOS application focused on AI-assisted real estate
+                     photo editing and streamlined image workflows.
+                  </li>
+
+                  <li>
+                     <strong>
+                        eCardify - Digital Business Card
+                     </strong>
+                     <br>
+                     Production iOS application for digital business card,
+                     scanning and sharing workflows.
+                     <br>
+
+                     <a
+                        href="https://apps.apple.com/pt/app/ecardify/id6452084315?l=en-GB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        App Store
+                     </a>
+                  </li>
+
+               </ul>
+
+               <p class="small-note">
+                  Additional independently developed iOS applications are
+                  available at
+                  <a
+                     href="https://byalif.app/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     byalif.app
+                  </a>.
+               </p>
+
+            </div>
+
+            <!-- Additional Engineering -->
+            <div class="section">
+
+               <h6 class="section-title">
+                  Additional Engineering
+               </h6>
+
+               <ul class="section-list">
+
+                  <li>
+                     <strong>Server-side Swift:</strong>
+                     Vapor 4, SwiftNIO, JWT
+                  </li>
+
+                  <li>
+                     <strong>Backend / DevOps:</strong>
+                     Docker, AWS, REST services
+                  </li>
+
+                  <li>
+                     <strong>Earlier Web:</strong>
+                     Ruby on Rails, JavaScript, HTML, CSS
+                  </li>
+
+               </ul>
+
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+
+               <h6 class="section-title">
+                  Education
+               </h6>
+
+               <ul>
+
+                  <li>
+                     Bachelor in Information Technology,
+                     St. Petersburg State University of Aerospace
+                     Instrumentation, Russia, 2015
+                  </li>
+
+                  <li>
+                     Remote Bootcamp in Ruby, USA
+                  </li>
+
+               </ul>
+
+            </div>
+
+            <!-- Languages -->
+            <div class="section">
+
+               <h6 class="section-title">
+                  Languages
+               </h6>
+
+               <h6>English: Fluent</h6>
+               <h6>Russian: Fluent</h6>
+               <h6>Bangla: Native</h6>
+               <h6>Hindi: Conversational</h6>
+
+            </div>
+
+         </div>
+
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   </body>
+
+   </div>
+
+   <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+   ></script>
+
+</body>
 </html>
